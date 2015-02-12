@@ -1,0 +1,18 @@
+# draft version
+
+script:
+  - sbt ++$TRAVIS_SCALA_VERSION compile
+  - sbt ++$TRAVIS_SCALA_VERSION test
+
+scala:
+  - 2.11.4
+  - 2.11.5
+  - 2.11.6
+
+jdk:
+  - oraclejdk7
+
+notifications:
+  email:
+    - driffire@gmail.com
+    - kirill.yun@gmail.com
